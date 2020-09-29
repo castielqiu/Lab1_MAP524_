@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Navy"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lab1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/Black"
+        android:gravity="center"
+        android:text="@string/Lab1"
+        android:textColor="@color/Lime"
+        android:textSize="30sp" />
+    <!--This is the main Linear layout view that contain 3 more Linear layout views inside. I set this background to white-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <!--this view contain username and password views-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:autofillHints=""
+                android:background="@color/Yellow"
+                android:gravity="center|center_horizontal"
+                android:hint="@string/username"
+                android:textColor="@color/Black"
+                android:inputType="text"
+                android:textSize="30sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:background="@color/Yellow"
+                android:textColor="@color/Black"
+                android:gravity="center"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textSize="30sp">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <!--this contain humber and ryerson 2 text views-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/humber"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/PaleVioletRed"
+                android:gravity="center|center_horizontal"
+                android:hint="@string/h"
+                android:textColorHint="@color/Black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/ryerson"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:textColorHint="@color/White"
+                android:background="@color/Blue"
+                android:gravity="center|center_horizontal"
+                android:hint="@string/r"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <!--this contain york and seneca 2 text views-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/york"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/GreenYellow"
+                android:gravity="center|center_horizontal"
+                android:hint="@string/york"
+                android:textColorHint="@color/Black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/seneca"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="@color/Red"
+                android:gravity="center|center_horizontal"
+                android:hint="@string/seneca"
+                android:textColorHint="@color/White"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

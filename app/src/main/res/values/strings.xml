@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lab1_MAP524_DPS924_ZHIWEIQIU</string>
+    <string name="Lab15">  Lab1(5%)</string>
+    <string name="Lab1">Lab 1</string>
+    <string name="h">HUMBER</string>
+    <string name="r">RYERSON</string>
+    <string name="york">YORK</string>
+    <string name="seneca">SENECA</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+</resources>
